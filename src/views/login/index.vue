@@ -42,7 +42,7 @@ export default Vue.extend({
     return {
       form: {
         phone: '18201288771',
-        password: '1123'
+        password: '111111'
       },
       rules: {
         phone: [
@@ -69,9 +69,8 @@ export default Vue.extend({
           this.$message.error(data.message)
         } else {
           this.$message.success('登录成功')
-          this.$router.push({
-            name: 'home'
-          })
+          this.$store.commit('setUser', data.content)
+          this.$router.push(this.$route.query.redirect as string || '/')
         }
       } catch (error) {
         console.log('登录失败', error)

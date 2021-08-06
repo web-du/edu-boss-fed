@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>App</h1>
     <router-view/>
   </div>
 </template>
@@ -14,4 +13,9 @@ export default Vue.extend({
 
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+// @import '@/styles/variables.scss';
+.text {
+  color: $warning-color;
+}
+</style>

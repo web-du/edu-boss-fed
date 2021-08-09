@@ -35,6 +35,8 @@ export default Vue.extend({
   },
   created () {
     this.loadUserInfo()
+    // this.loadUserInfo()
+    // console.log('this.loadUserInfo')
   },
   methods: {
     async loadUserInfo () {

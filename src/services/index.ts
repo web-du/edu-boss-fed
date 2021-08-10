@@ -1,2 +1,5 @@
 export * from './user'
 export * from './menu'
+export * from './resource'
+export * from './resource-category'
+export * from './role'

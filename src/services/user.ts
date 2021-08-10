@@ -27,3 +27,21 @@ export const getUserInfo = () => {
     url: '/front/user/getInfo'
   })
 }
+// eslint-disable-next-line
+export const getUserPages = (data: any) => {
+  return request({
+    method: 'POST',
+    url: '/boss/user/getUserPages',
+    data
+  })
+}
+// eslint-disable-next-line
+export const forbidUser = (userId: string | number) => {
+  return request({
+    method: 'POST',
+    url: '/boss/user/forbidUser',
+    params: {
+      userId
+    }
+  })
+}
